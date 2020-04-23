@@ -1,7 +1,7 @@
 // Root component
 //Also we can turn this App component into the Layout and place into Index.js as Root component!
 import React from "react";
-import Layout from "./components/Layout/Layout";
+import Layout from "./hoc/Layout/Layout";
 import BurgerBuilder from "./containers/BurgerBuilder/BurgerBuilder";
 // import logo from "./logo.svg";
 // import "./App.css";

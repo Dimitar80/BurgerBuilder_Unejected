@@ -1,0 +1,13 @@
+.Logo {
+  background-color: white;
+  padding: 5px;
+  height: 100%; /*80%;*/ /*Of the full sideDrawer*/
+  /*And i will restrict in the Toolbar and in the SideDrawer to fit the speific needs 
+  of these components*/
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+.Logo img {
+  height: 100%;
+}

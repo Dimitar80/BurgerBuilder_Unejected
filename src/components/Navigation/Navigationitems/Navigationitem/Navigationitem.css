@@ -1,0 +1,66 @@
+/*Mobile settings - Start*/
+.Navigationitem {
+  margin: 10 0;
+  /* margin: 0; */
+  box-sizing: border-box;
+  /* display: flex; */
+  /* height: 100%; */
+  display: block;
+  width: 100%;
+  /* align-items: center; */
+}
+
+.Navigationitem a {
+  /* color: white; */
+  color: #8f5c2c;
+  text-decoration: none;
+  /* height: 100%; */
+  width: 100%;
+  /* padding: 16px 10px; */
+  /* border-bottom: 4px solid transparent; */
+  box-sizing: border-box;
+  display: block;
+}
+
+/* .Navigation a:hover,
+.Navigation a:active,
+.Navigation a:active {
+  background-color: #8f5c28;
+  border-bottom: 4px solid #40a4c8;
+  color: white;
+  
+} */
+
+.NavigationAlt /*a:active*/ {
+  /* background-color: #8f5c28; */
+  border-bottom: 4px solid #40a4c8;
+  /* color: white; */
+  color: #40a4c8;
+}
+/*Mobile settings - End*/
+
+/*Desktop settings - Start*/
+@media (min-width: 500px) {
+  .Navigationitem {
+    margin: 0;
+    /* box-sizing: border-box; No need because media queries are merged with original classes!
+    and there is no need for this property to be overwritten! */
+    display: flex;
+    height: 100%;
+    width: auto;
+    align-items: center;
+  }
+
+  .Navigationitem a {
+    color: white;
+    height: 100%;
+    padding: 16px 10px;
+    /* border-bottom: 4px solid transparent; */
+  }
+  .NavigationAlt {
+    background-color: #8f5c28;
+    border-bottom: 4px solid #40a4c8;
+    color: white;
+  }
+}
+/*Desktop settings - End*/

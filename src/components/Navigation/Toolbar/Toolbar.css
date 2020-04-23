@@ -1,0 +1,39 @@
+.Toolbar {
+  /*MOBILE FIRST*/
+  height: 56px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #703b09;
+  display: flex;
+  /* display:flex - means - All the items in the toolbar are alligned next to each other
+  because the default direction of flexbox is row, even if thay are block level elements */
+  justify-content: space-between;
+  /*justify-content - How the elements which are wrapped by the Toolbar class item
+  should be spread out*/
+  align-items: center;
+  /* align-items - how thay should be aligned verticaly */
+  padding: 0px 20px;
+  box-sizing: border-box;
+  /*That the Toolbar is sized correctly even with the padding*/
+  z-index: 90;
+  /* This number(value) has to be lower that the number of z-index(axis) we picked up for the Bacdrop!*/
+}
+
+/*Another rule*/
+.Toolbar nav {
+  height: 100%; /*To make sure that the navigation items spend the full height of this Toolbar!*/
+}
+
+/* .Logo {
+  height: 80%;
+} */
+
+/*Hepler for removing desktop navigationItems
+If max-with is 499px = we are on a mobile device*/
+@media (max-width: 499px) {
+  .DesktopOnly {
+    display: none;
+  }
+}
